@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>{% if page.title %}{% endif %}{{ site.meta.site_title }}</title>
+        <meta name="author" content="{{ site.meta.author.fullname }}" />
+
+        <link href="atom.xml" rel="alternate" title="Atom" type="application/atom+xml" />
+        <link href="rss.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+		<link rel="shortcut icon" type=image/x-icon href="{{site.baseurl}}www.ico.la_a1d4d2dcbca7ae0cf731eee126b81556_32X32.ico">
+		<link rel="stylesheet" href="/css/Font-Awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/screen.css">
+		<link rel="stylesheet" type="text/css" href="/css/portfolio.css"> 
+		 
+		<!--[if lt IE 9]>
+			<script src="{{site.baseurl}}/js/html5.js" type="text/javascript"></script>	 
+        <![endif]--> 
+		{% for css in site.css %}<link rel="stylesheet" href="{{site.baseurl}}{{ css }}" type="text/css" />
+		{% endfor %}	
+		{% for css in page.css %}<link rel="stylesheet" href="{{site.baseurl}}{{ css }}" type="text/css" />
+		{% endfor %}
+		<script src="/js/scrolltop.js" type="text/javascript" charset="utf-8"></script>	
+
+		{% unless page.title %}
+			{% include redirect-url.html %}
+		{% endunless %}  
+
+			
+    </head>	
+
+	<body>
+	<header style="height: 138px; background: #000;overflow: hidden;">
+		<section class="y-top" style="">
+            <div class="foo">沧苑</div>
+			<div class="info">
+				<p>————心有多远，就能走多远~</p>
+			</div>
+        </section>
+		<canvas></canvas>
+	</header>
+	{% include browser-warning.html %}
+	{% include browser.html %}		
+<!--返回顶部按钮-->
+<div id="goTopBtn" style="display:none" title="返回顶部"><a href="javascript:"><i class="fa fa-arrow-circle-up"></i></a></div>
+<script type="text/javascript">goTopEx();</script>
+<!--返回顶部按钮end-->
+
+        <section class="site">
+            <!-- <header>
+                <h1><a href="{{site.baseurl}}">{{ site.meta.site_title }}</a></h1>
+                <h2>{{ site.meta.site_subtitle }}</h2>
+		    </header>	 -->		
+			<aside class="sidebar">
+				{% unless page.title %}
+					{% include about-me.html %} 
+				{% endunless %}				
+				{% if page.title %}
+					{% include recent.html %}
+				{% endif %}				
+				{% include tag-sidebar.html %}
+				<!-- {% include douban.html %}  -->
+				{% include see-also.html %} 				                         
+            </aside> 			
+			{{ content }}    
+  			{% include footer.html %} 
+        </section>
+		{% for js in page.js %}<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
+		{% endfor %}
+		{% for js in site.js %}<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
+		{% endfor %}
+		{% include after-foot.html %}
+		{% include killie6.html %}	
+		<script type="text/javascript" src="/js/canvas.js"></script>	
+    </body>
+</html>
