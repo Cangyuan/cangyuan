@@ -27,7 +27,7 @@ markdown: kramdown
 pygments: false
 permalink: /blog/:year/:month/:day/:title
 
-# disqus_short_name: ypchenstory
+disqus_short_name: ypchenstory
 
       
 css:
