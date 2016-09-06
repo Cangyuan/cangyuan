@@ -1,0 +1,12 @@
+---
+layout: post
+title: 要走的路好长
+tags: 日记
+published: true
+comment: true
+image: 
+description: 
+date: 2016-09-06
+---
+
+node还在起步阶段，es6还在蹒跚学步，自动化测试还是一头雾水，angular还是似懂非懂，sass只是了解，koa框架还是毫无起色，最近还有英语考试，不加把油怎么办呢？！现在总是彻夜难眠，但依然解决不了任何问题…………
