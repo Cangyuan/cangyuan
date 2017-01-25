@@ -7,10 +7,10 @@ ul li{
 	list-style: none;
 }
 a{
-	color: #cd4242;
+	color: #666;
 }
 a:hover{
-	color: #f6cf3f
+	color: #2b2b2b
 }
 body {
 	background-color:#f3f3f3;
@@ -306,13 +306,11 @@ color:gray;
 }
 
 .listing-item a:hover{
-color:#f19149!important;
+	color:#2b2b2b;
 }
-
-.listing-item a:hover{color:#00B2EE;}
-
 .listing-item time {
-color:#999;
+	color:#a6a6a6;
+	margin-right: 16px;
 }
 
 .listing-item,.listing-seperator {
@@ -371,7 +369,7 @@ h1,#tag_cloud a{
 	margin-right: .4em;
 	font-size: 1em;
 	font-weight: normal;
-	color: #2b2b2b!important;
+	/*color: #2b2b2b!important;*/
 	letter-spacing: 1px;
 }
 
@@ -504,7 +502,7 @@ margin-bottom:2em;
 }
 
 ul.posts li {
-line-height:1.75em;
+	line-height:1.8;
 }
 
 ul.posts span {
