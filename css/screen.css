@@ -471,19 +471,19 @@ float:right;
 }
 
 span#copyright a,span#poweredby a {
-border-bottom:0;
-color:#00b38a;
+	border-bottom:0;
+	color:#a6a6a6;
 }
 
 span#copyright a:hover,span#poweredby a:hover {
-color:#f6cf3f;
+	color:#2b2b2b;
 }
 .pagination a{
-	color: #00b38a;
+	color: #2b2b2b;
 	text-decoration: none;
 }
 .pagination a:hover{
-	color: #f6cf3f;
+	color: #a6a6a6;
 }
 
 span#copyright,span#poweredby {
