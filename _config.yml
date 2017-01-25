@@ -3,14 +3,14 @@ meta:
     site_subtitle: "心有多远就能走多远"
     site_language: "zh-cn"
     # absolute_baseurl: http://art.yanping.me
-    domain: yxiaodan.info
+    domain: orca.website
     author:
         full_name: Cangyuan
         # short_name: ypchen
         # name: ypchen
         email: 1339918746@qq.com
 
-url: http://yxiaodan.info
+url: /
 
 baseurl: /
 
@@ -27,7 +27,7 @@ markdown: kramdown
 pygments: false
 permalink: /blog/:year/:month/:day/:title
 
-disqus_short_name: ypchenstory
+#disqus_short_name: ypchenstory
 
       
 css:
