@@ -61,9 +61,9 @@
 				<!-- {% include douban.html %}  -->
 				{% include see-also.html %} 				                         
             </aside> 			
-			{{ content }}    
-  			{% include footer.html %} 
+			{{ content }}     
         </section>
+        {% include footer.html %}
 		{% for js in page.js %}<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
 		{% endfor %}
 		{% for js in site.js %}<script src="{{site.baseurl}}{{ js }}" type="text/javascript" charset="utf-8"></script>
