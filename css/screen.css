@@ -177,10 +177,9 @@ aside.sidebar section p{
 }
 
 aside.sidebar section a {
-	color:#a6a6a6;
-	font-family:serif,sans-serif,SimSun,arial;
-	padding-left: 1em;
-	font-weight: 600;
+	color: #a6a6a6;
+	font-family: "微软雅黑";
+	font-weight: normal;
 }
 
 aside.sidebar section a:hover {
@@ -555,13 +554,13 @@ a[title*="大图"]{
 }
 
 /* @group FancyFirst */
-.emphnext + p:first-letter, p.emphfirst:first-letter {
+/*.emphnext + p:first-letter, p.emphfirst:first-letter {
 	font-size: 2em;
 	padding: 0 0.1em 0 0;
 	margin:  0.05em 0 -0.15em 1em;
 	line-height: 1em;
 	float: left;
-}
+}*/
 
 
 section.content article > ul.emphnext + p{
