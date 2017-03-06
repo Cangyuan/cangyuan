@@ -1,0 +1,23 @@
+---
+layout: post
+title: js实现倒计时笔记
+tags: javascript
+published: true
+comment: true
+image: 
+description: 
+date: 2016-03-07
+---
+&<
+ab-content
+
+	<div class="ab-content">
+	  <div class="wrap-me"><img src="images/me.jpg" alt=""></div>
+	  <p><strong>orca</strong></p>
+	  <p>现居地 广东<span>·</span>佛山</p>
+	  <p>web前端开发工程师</p>
+	  <p>新乡医学院<span>·</span>本科</p>
+	  <p>爱好<span>·</span>看书<span>·</span>跑步</p>
+	  <p>专注界面设计、交互设计、前端开发，关注互联</p>
+	</div>
+
