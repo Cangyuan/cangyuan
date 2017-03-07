@@ -9,12 +9,12 @@ title: 关于
 .site{
 	width: 100%;
 }
-	.wrap-ab{
-	width: 60%;
+.wrap-ab{
+	width: 68%;
 	margin: 0 auto;
 	min-height: 300px;
 	background: #fff;
-	/*box-shadow: 0 0 4px #ddd;*/
+	box-shadow: 0 0 4px #e3e3e3;
 	position: relative;
 	padding: 20px;
 	box-sizing:border-box;
@@ -36,29 +36,32 @@ title: 关于
 }
 #aside{
 	position: absolute;
-	top: 30px;
-	right: -140px;
+	top: 10px;
+	right: -70px;
 }
 #aside>a{
 	display: block;
-	width: 60px;
-	height: 60px;
+	padding: 8px;
 	background: #fff;
-	margin: 20px;
+	margin: 6px;
 	position: relative;
 }
-#aside>a>img{
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
+#aside>a>i{
+	font-size: 20px;
+	color: #666;
+}
+#aside>a:hover>i{
+	color: #009688;
 }
 .wrap-ab .ab-content .ab-title>p{
 	color: #a6a6a6;
+}
+.wrap-ab .ab-content .ab-info p{
+	line-height: 30px;
+	color: #666;
+}
+.wrap-ab .ab-content .ab-info p>a{
+	color: #15bcab;
 }
 </style>
 <section class="content">
@@ -70,7 +73,7 @@ title: 关于
 			</div>
 			<div class="ab-info">
 				<div class="info-text">
-					<p style="float: right;width: 40%;"><img style="width: 100%;" src="/images/logo.png" alt=""></p>
+					<p style="float: right;width: 36%;"><img style="width: 100%;" src="/images/logo.png" alt=""></p>
 					<p><strong>博主：</strong>orca</p>
 					<p><strong>职业：</strong>web前端开发工程师</p>
 					<p><strong>web简历：</strong><a href="http://orca.website/about/">点击查看</a></p>
@@ -78,10 +81,28 @@ title: 关于
 
 					<p><strong>个人愿望：</strong>希望可以广交天下志同道合的朋友，一同交流技术等方面遇到的问题及经验。</p>
 					<p><strong>联系方式：</strong></p>
-					<p><span style="color: #3366ff">QQ:</span>1339918746 <a href="tencent://message/?uin=1339918746&Menu=yes">qq</a></p>
-					<p><span style="color: #3366ff">Email:</span>1339918746@qq.com <a href="tencent://message/?uin=1339918746&Menu=yes">qq</a></p>
+					<p><span style="color: #3366ff">QQ:</span>1339918746 <!-- <a href="tencent://message/?uin=1339918746&Menu=yes">qq</a> --></p>
+					<p><span style="color: #3366ff">Email:</span>1339918746@qq.com <!-- <a href="tencent://message/?uin=1339918746&Menu=yes">qq</a> --></p>
 					
 				</div>
+				<section class="comments" id="comments">
+					<!-- 多说评论框 start -->
+						<div class="ds-thread" data-thread-key="about" data-title="{{site.baseurl}}about" data-url="{{site.baseurl}}about" title="{{site.baseurl}}about"></div>
+					<!-- 多说评论框 end -->
+					<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+					<script type="text/javascript">
+						var duoshuoQuery = {short_name:"orca"};
+						(function() {
+							var ds = document.createElement('script');
+							ds.type = 'text/javascript';ds.async = true;
+							ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+							ds.charset = 'UTF-8';
+							(document.getElementsByTagName('head')[0] 
+							 || document.getElementsByTagName('body')[0]).appendChild(ds);
+						})();
+					</script>
+					<!-- 多说公共JS代码 end -->
+				</section>
 				<!-- <div class="commtent" style="width: 100%;height: 500px;">					
 				
 				</div> -->
@@ -89,27 +110,27 @@ title: 关于
 		</div>
 		<aside id="aside">
 			<a href="https://twitter.com/Orca_2017" target="_blank">
-				<img src="./imgs/public/weibo.png" alt="">
-			<!-- 绮罗生官会微博 -->
+				<!-- <img src="/images/twitter.png" alt="twitter"> -->
+				<i class="fa fa-twitter"></i>
+			<!-- twitter-->
 			</a>
 			<a href="https://github.com/Cangyuan" target="_blank">
-				<img src="./imgs/public/tieba.jpg" alt="">
-			<!-- 绮罗生贴吧 -->
+				<!-- <img src="/images/github.png" alt=""> -->
+				<i class="fa fa-github"></i>
+			<!-- github -->
 			</a>
-			<!-- <a href="">
-				<img src="./imgs/public/weibo.png" alt="">
-			霹雳绮罗生版块
-			</a>  -->
 			<a href="https://www.linkedin.com/in/orca2017/">
-				<img src="./imgs/public/qq.png" alt="">
-			<!-- 绮罗生qq群 188468228-->
+				<!-- <img src="/images/in.png" alt=""> -->
+				<i class="fa fa fa-linkedin"></i>
+			<!-- 领英-->
 			</a>
 		</aside>
 	</div>
+
 </section>
 <script src="/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script>
 	$(function(){
-		$('.info ul li:nth-of-type(3)').addClass('active')
+		$('.info ul li:nth-of-type(2)').addClass('active')
 	})
 </script>

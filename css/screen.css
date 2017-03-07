@@ -2,13 +2,13 @@
 margin:0;
 padding:0;
 font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-font-family: Circular,"Helvetica Neue","Microsoft YaHei","Helvetica",Arial,sans-serif!important
+/*font-family: Circular,"Helvetica Neue","Microsoft YaHei","Helvetica",Arial,sans-serif!important*/
 
 }
 ul li{
 	list-style: none;
 }
-body {
+body{
 	background-color:#f3f3f3;
     font:14px/1.8em georgia, serif;
 }
@@ -20,6 +20,10 @@ font-size:100%;
 margin:0;
 padding:0;
 vertical-align:baseline;
+
+}
+p{
+	font-family: Circular,"Helvetica Neue","Microsoft YaHei","Helvetica",Arial,sans-serif!important
 }
 code{
 	display: block;
@@ -31,7 +35,6 @@ display:block;
 article.posts{
 	padding: 2% 3%;
 	background: #fff;
-	margin-bottom: 2%;
 }
 header{
 	height: 158px;
@@ -140,31 +143,24 @@ list-style:none;
 }
 
 section.site > section.content article,section.comments {
-background-color:#f8f8f8;
+/*background-color:#f8f8f8;*/
 padding: .5em 1.4em;
 }
 
-section.content nav.page-navigation {
-text-align: center;
-margin:1em 0;
-min-height:2em;
-padding:.25em;
-position:relative;
-/*background: #121212;*/
+section.content nav.page-navigation{
+	text-align: center;
+	min-height:2em;
+	padding:1.25em .25em;
+	position:relative;
+	background: #121212;
 }
 
-
-section.site > section.content nav.page-navigation a {
-font:14px tahoma;
-padding:.25em;
-color:#444;
+section.content nav.page-navigation a{
+	color: #a6a6a6
 }
-
-section.site > section.content nav.page-navigation a:hover {
-padding:.25em;
-color: #a6a6a6;
+section.content nav.page-navigation a:hover{
+	color: #fff;
 }
-
 a.left {float:left}
 
 a.right {float:right}
@@ -596,7 +592,7 @@ border-bottom:0;
 
 
 #goTopBtn {
-  position: fixed; _position:absolute; _top:expression(document.documentElement.clientHeight + document.documentElement.scrollTop - this.offsetHeight); TEXT-ALIGN: center; LINE-HEIGHT: 50px; WIDTH: 50px; HEIGHT: 50px; FONT-SIZE: 12px; CURSOR: pointer; left:52%; bottom:0; margin-left: 480px;
+  position: fixed; _position:absolute; _top:expression(document.documentElement.clientHeight + document.documentElement.scrollTop - this.offsetHeight); TEXT-ALIGN: center; LINE-HEIGHT: 50px; WIDTH: 50px; HEIGHT: 50px; FONT-SIZE: 12px; CURSOR: pointer; right:40px; bottom:60px; margin-left: 480px;
 }
 
 #goTopBtn a{
@@ -706,4 +702,8 @@ ul{
 	section{
 		width: 100%;
 	}
+}
+#ds-thread {background: #ffffff;}
+#comments{
+	background: #fff;
 }
