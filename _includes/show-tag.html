@@ -1,6 +1,13 @@
+<script src="/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript">
-	
+		// $(function(){
+		// 	$('#tag_cloud a').click(function(event) {
+		// 		$('#tag_cloud a').removeClass('tag-active')
+		// 		$(this).addClass('tag-active');
+		// 	});
+		// })
 		function showTag(tagStr){
+
 			jq.getJSON("../post.json",function(data){				
 				jq('#show-tag').empty(content);				
 				var content ="<h2>分类："+ tagStr +"</h2><ul class=\"posts\">";
