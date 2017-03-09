@@ -777,4 +777,7 @@ ul{
 	#aside{
 		display: none;
 	}
+	.info>ul>li>a{
+		font-size: 1.4em;
+	}
 }
