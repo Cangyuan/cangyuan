@@ -774,4 +774,7 @@ ul{
 	#goTopBtn{
 		z-index: 999;
 	}
+	#aside{
+		display: none;
+	}
 }
