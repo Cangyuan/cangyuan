@@ -710,17 +710,6 @@ ul{
 	padding: 0;
 }
 
-@media screen and (max-width: 600px){
-	.foo{
-		font-size: 3em;
-	}
-	.info{
-		font-size: 1.2em;
-	}
-	section{
-		width: 100%;
-	}
-}
 
 /*多说评论css*/
 #comments>h3{
@@ -755,3 +744,34 @@ ul{
 /*#ds-thread #ds-reset .ds-replybox .ds-avatar img{
 	display: none!important;
 }*/
+
+
+
+@media screen and (max-width: 600px){
+	.foo{
+		font-size: 3em;
+	}
+	.info{
+		font-size: 1.2em;
+	}
+	section{
+		width: 100%;
+	}
+	.site{
+		float: none;
+		width: 100%;
+	}
+	.sidebar{
+		float: none;
+		width: 100%;
+	}
+	.wrap-ab{
+		width: 100%!important;
+	}
+	section.site > section.content article, section.comments{
+		padding: 0;
+	}
+	#goTopBtn{
+		z-index: 999;
+	}
+}
