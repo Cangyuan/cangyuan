@@ -535,6 +535,12 @@ section.content article p {
 	letter-spacing: 0.02em;
 	/*font-family: "微软雅黑";*/
 	line-height: 1.8em;
+	/*width:200px;*/
+	word-break:break-all;
+	display:-webkit-box;
+	-webkit-line-clamp:4;
+	-webkit-box-orient:vertical;
+	overflow:hidden;
 }
 
 section.content article p.excerpt{
@@ -776,7 +782,6 @@ ul{
 	}
 	#aside{
 		display: none;
-		/**/
 	}
 	.info>ul>li>a{
 		font-size: 1.4em;

@@ -3,11 +3,12 @@ layout: post
 title: for in遍历对象介绍
 tags: javascript
 comment: true
-image: 
+image:
+categories: javascript 
 published: true
 description: 
 ---
-for in遍历对象示例代码
+# for in遍历对象示例代码
 
 	<!DOCTYPE html>
 	<html lang="en">
