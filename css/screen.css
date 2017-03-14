@@ -664,6 +664,9 @@ a[title*="大图"]{
 ul.emphnext{
 	margin-bottom: 20px;
 }
+ul.emphnext>li a{
+	color: #8a8a8a;
+}
 .emphnext>li{
 	display: inline-block;
 }

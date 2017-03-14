@@ -3,7 +3,7 @@ layout: nil
 ---
 
 	var post = {
-	"list":[{% for post in site.posts limit:5 %}{
+	"list":[{% for post in site.posts limit:10 %}{
 	    "title":"{{post.title}}",
         "url":"{{site.url}}{{post.url}}",
         "date":"{{post.date|date_to_string}}"

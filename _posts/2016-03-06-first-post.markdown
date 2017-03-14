@@ -7,7 +7,8 @@ image: /images/logo.jpg
 published: true
 date: 2016-03-06
 ---
-<!-- ![](/images/logo.jpg) -->
+
+[Alt text](/images/logo.png)
 js时钟代码
 
 	<!DOCTYPE HTML>
